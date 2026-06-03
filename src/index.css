@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sql-blue-light: #00d1ff;
+  --color-sql-card: #153F87;
+  --color-sql-gray: #4a4a4a;
+  --background-image-sql-bg: linear-gradient(-128deg, #08062B 0%, #081F46 100%);
+}
+
+@layer base {
+  body {
+    background-image: var(--background-image-sql-bg);
+    background-attachment: fixed;
+    @apply min-h-screen text-white font-mono antialiased;
+  }
+}
